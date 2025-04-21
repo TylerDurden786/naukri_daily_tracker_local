@@ -1,0 +1,18 @@
+
+#naukri-tracker-box {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  background: white;
+  border: 1px solid #aaa;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#naukri-tracker-box button {
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 13px;
+}

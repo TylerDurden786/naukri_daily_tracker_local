@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Naukri Apply Tracker",
+  "version": "1.0",
+  "description": "Track Apply clicks on Naukri.com",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["*://www.naukri.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.naukri.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Naukri Tracker"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "web_accessible_resources": [{
+    "resources": ["styles.css"],
+    "matches": ["<all_urls>"]
+  }]
+}
